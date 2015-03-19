@@ -1,0 +1,125 @@
+print('Bem vindo ao pedra, papel, tesoura, lagarto e spock! O primmeiro jogador a fazer 3 pontos seguidos vence a partida. Boa sorte!')
+r=('sim')
+c=0
+p=0
+while r==('sim'):
+     if r==('sim'):
+        p=0
+        c=0
+        while (c<3 and p<3):
+            player = input('Digite sua escolha: ')
+            import random
+            lista = ['pedra','papel','tesoura','lagarto','spock']
+            computador=random.choice(lista)
+            if computador == player:
+                print('\n O computador escolheu o mesmo!, empatou.')
+            if player==('pedra') and computador ==('papel'):
+                print('\n Computador escolheu papel, Papel cobre Pedra, computador ganhou!')
+                c=c+1
+                p=0
+                print('Computador',c,'Jogador',p)
+            if player==('pedra') and computador==('lagarto'):
+                print('\n Computador escolheu lagarto, pedra esmaga lagarto, voce ganhou!')
+                c=0
+                p=p+1
+                print('Computador',c,'Jogador',p)
+            if player==('pedra') and computador==('spock'):
+                print('\n Computador escolheu spock, spock vaporiza pedra, computador ganhou!')
+                c=c+1
+                p=0
+                print('Computador',c,'Jogador',p)
+            if player==('pedra') and computador==('tesoura'):
+                print('\n Computador escolheu tesoura, pedra quebra tesoura, voce ganhou!')
+                c=0
+                p=p+1
+                print('Computador',c,'Jogador',p)
+            if player==('papel') and computador==('pedra'):
+                print('\n Computador escolheu pedra, papel cobre pedra, voce ganhou!')
+                c=0
+                p=p+1
+                print('Computador',c,'Jogador',p)
+            if player==('papel') and computador==('tesoura'):
+                print('\n Computador escolheu tesoura, tesoura corta papel, computador ganhou!')
+                c=c+1
+                p=0
+                print('Computador',c,'Jogador',p)
+            if player==('papel') and computador==('spock'):
+                print('\n Computador escolheu spock, papel refuta spock, voce ganhou!')
+                c=0
+                p=p+1
+                print('Computador',c,'Jogador',p)
+            if player==('papel') and computador==('lagarto'):
+                print('\n Computador escolheu lagarto, lagarto come papel, computador ganhou!')
+                c=c+1
+                p=0
+                print('Computador',c,'Jogador',p)
+            if player==('tesoura') and computador==('papel'):
+                print('\n Computador escolheu papel, tesoura corta papel, voce ganhou!')
+                c=0
+                p=p+1
+                print('Computador',c,'Jogador',p)
+            if player==('tesoura') and computador==('pedra'):
+                print('\n Computador escolheu pedra, pedra quebra tesoura, computador ganhou!')
+                c=c+1
+                p=0
+                print('Computador',c,'Jogador',p)
+            if player==('tesoura') and computador==('spock'):
+                print('\n Computador escolheu spock, spock esmaga tesoura, computador ganhou!')
+                c=c+1
+                p=0
+                print('Computador',c,'Jogador',p)
+            if player==('tesoura') and computador==('lagarto'):
+                print('\n Computador escolheu lagarto, tesoura decapita lagarto, voce ganhou!')
+                c=0
+                p=p+1
+                print('Computador',c,'Jogador',p)
+            if player==('lagarto') and computador==('pedra'):
+                print('\n Computador escolheu pedra, pedra esmaga lagarto, computador ganhou!')
+                c=c+1
+                p=0
+                print('Computador',c,'Jogador',p)
+            if player==('lagarto') and computador==('papel'):
+                print('\n Computador escolheu papel, lagarto come papel, voce ganhou!')
+                c=0
+                p=p+1
+                print('Computador',c,'Jogador',p)
+            if player==('lagarto') and computador==('tesoura'):
+                print('\n Computador escolheu tesoura, tesoura decapita lagarto, computador ganhou!')
+                c=c+1
+                p=0
+                print('Computador',c,'Jogador',p)
+            if player==('lagarto') and computador==('spock'):
+                print('\n Computador escolheu spock, lagarto envenena spock, voce ganhou!')
+                c=0
+                p=p+1
+                print('Computador',c,'Jogador',p)
+            if player==('spock') and computador==('pedra'):
+                print('\n Computador escolheu pedra, spock vaporiza pedra, voce ganhou!')
+                c=0
+                p=p+1
+                print('Computador',c,'Jogador',p)
+            if player==('spock') and computador==('papel'):
+                print('\n Computador escolheu papel, papel refuta spock, computador ganhou!')
+                c=c+1
+                p=0
+                print('Computador',c,'Jogador',p)
+            if player==('spock') and computador==('tesoura'):
+                print('\n Computador escolheu tesoura, spock esmaga tesoura, voce ganhou!')
+                c=0
+                p=p+1
+                print('Computador',c,'Jogador',p)
+            if player==('spock') and computador==('lagarto'):
+                print('\n Computador escolheu lagarto, lagarto envenena spock, computador ganhou!')
+                c=c+1
+                p=0
+                print('Computador',c,'Jogador',p)
+     if c==3:
+         print('computador ganhou')
+         r = input('Deseja jogar novamente? ')
+     if p==3:
+         print('Jogador ganhou')
+         r = input('Deseja jogar novamente? ')
+
+print('Jogo finalizado')
+
+        
